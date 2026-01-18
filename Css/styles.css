@@ -38,10 +38,12 @@ body {
 
 .Header p {
     font-family: 'Arial', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     color: #fffae3;
     max-width: 800px;
     margin: 2px 0;
+    text-align: center;
+    line-height: 1.6;
 }
 
 .Contenidos {   
@@ -108,7 +110,7 @@ img:hover {
     transform: scale(1.05);
 }
 
-.conoces {
+#conoces {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -122,7 +124,7 @@ img:hover {
     align-items: center; 
 }
 
-.conoces img {
+#conoces img {
     width: auto; 
     height: 450px; 
     border-radius: 10px;
@@ -131,7 +133,7 @@ img:hover {
 }
 
 
-.conoces h1 {
+#conoces h1 {
     text-align: center;
     font-size: 60px; 
     margin-bottom: 20px;
@@ -140,7 +142,7 @@ img:hover {
     font-family: 'Lobster', Arial, sans-serif;
 }
 
-.conoces p {
+#conoces p {
     text-align: center;
     font-size: 25px;
     color: #f9f9f9;
@@ -165,3 +167,241 @@ img:hover {
     background-color: #6d451f;
 }
 
+.video-container h1{
+    text-align: center;
+    font-size: 60px; 
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: 'Lobster', Arial, sans-serif;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-container iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 50%;
+    height: 400px;
+}
+
+.video-container iframe:hover {
+    transform: scale(1.05);
+}
+
+#FormularioBackground {
+    background-image: linear-gradient(rgba(79, 47, 3, 0.8), rgba(97, 54, 5, 0.8)), url("../img/enviado.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+}
+
+#Formulario {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+#Formulario form {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(135, 86, 38, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#Formulario label {
+    font-weight: 600;
+    color: #5a3a1a;
+    font-size: 0.95rem;
+    margin-bottom: -0.5rem;
+}
+
+#Formulario input,
+#Formulario textarea {
+    padding: 12px 16px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+#Formulario input:focus,
+#Formulario textarea:focus {
+    outline: none;
+    border-color: #875626;
+    background-color: #fff;
+}
+
+#Formulario textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#Formulario button {
+    margin-top: 1rem;
+    padding: 14px;
+    background-color: #875626;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#Formulario button:hover {
+    background-color: #6d451f;
+    transform: translateY(-2px);
+}
+
+.Footer {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: libre baskerville, serif;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px
+
+    
+}
+
+.logos {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+
+.logos:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Header {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem 10px;
+    }
+
+    .Header h1 {
+        font-size: 40px;
+    }
+
+    .Header h4 {
+        font-size: 15px;
+    }
+
+    .Header p {
+        font-size: 10px;
+    }
+
+    #conoces {
+        flex-direction: column;
+        padding: 20px;
+        margin: 1rem 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #conoces h1 {
+        color: #ffe3c6;
+        text-align: center
+    }
+
+     #conoces p {
+background-color: rgba(0, 0, 0, 0.5); 
+    
+    /* Agrega color blanco al texto para que contraste bien */
+    color: white; 
+    
+    /* Un poco de espacio interno para que se vea elegante */
+    padding: 20px;
+        color: #ffe3c6;
+        text-align: center
+    }
+
+
+
+    #conoces img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Contenidos {
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .video-container {
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #Formulario form {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    #Formulario h1 {
+        font-size: 36px !important;
+    }
+
+.Footer {
+        /* Cambiamos de 3 columnas a 1 sola */
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 2rem 1rem;
+    }
+    
+    /* Líneas divisorias sutiles entre secciones del footer en móvil */
+    .Footer > div {
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding-bottom: 20px;
+    }
+    
+    .Footer > div:last-child {
+        border-bottom: none;
+    }
+}
