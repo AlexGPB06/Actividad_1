@@ -9,7 +9,8 @@ body {
 
 /* Encabezado */
 .Header {
-    background-image: linear-gradient(rgba(206, 163, 111, 0.9), rgba(195, 154, 110, 0.9)), url("../img/Copia de La Rosetta Banner.jpg");
+    background-image: linear-gradient(rgba(206, 163, 111, 0.9), rgba(195, 154, 110, 0.9)),
+     url("../img/Copia de La Rosetta Banner.jpg");
     background-size: cover;
     background-position: center;
     padding: 2rem 1rem;
@@ -45,7 +46,7 @@ body {
     margin: 2px 0;
     line-height: 1.6;
 }
-
+/* Contenidos principales */
 .Contenidos {   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -202,13 +203,13 @@ img:hover {
     transform: scale(1.05);
 }
 
+/* Formulario de contacto */
+
 #FormularioBackground {
     background-image: linear-gradient(rgba(79, 47, 3, 0.8), rgba(97, 54, 5, 0.8)), url("../img/enviado.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
-
 }
 
 #Formulario {
@@ -277,6 +278,8 @@ img:hover {
     background-color: #6d451f;
     transform: translateY(-2px);
 }
+
+/* Footer */
 
 .Footer {
     background-color: #000000;
@@ -349,12 +352,8 @@ img:hover {
     }
 
      #conoces p {
-background-color: rgba(0, 0, 0, 0.5); 
-    
-    /* Agrega color blanco al texto para que contraste bien */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white; 
-    
-    /* Un poco de espacio interno para que se vea elegante */
     padding: 20px;
         color: #ffe3c6;
         text-align: center
@@ -397,14 +396,12 @@ background-color: rgba(0, 0, 0, 0.5);
         font-size: 36px !important;
     }
 
-.Footer {
-        /* Cambiamos de 3 columnas a 1 sola */
+    .Footer {
         grid-template-columns: 1fr;
         gap: 40px;
         padding: 2rem 1rem;
     }
     
-    /* Líneas divisorias sutiles entre secciones del footer en móvil */
     .Footer > div {
         border-bottom: 1px solid rgba(255,255,255,0.2);
         padding-bottom: 20px;
